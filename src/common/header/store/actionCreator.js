@@ -1,6 +1,8 @@
 import  * as actionsTypes from './actionTypes';
 import { fromJS } from 'immutable';
 import axios from 'axios';
+// import { actionCreators } from './actionCreators';
+// import { CHANGE_LOGIN } from '../../../pages/login/store/constants';
 
 const changeList = (data) => ({
     type:actionsTypes.CHANGE_LIST,
@@ -38,4 +40,4 @@ export const mouseLeave= () => ({
 export const switchPage = (page)=> ({
     type:actionsTypes.SEACHER_SWITCH,
     page:page
-})
+});
